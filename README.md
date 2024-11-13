@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blogform.xyz
 
-## Getting Started
+A simple, boilerplate for you to host your blog very easily.
+Just add your `.md` files in the `blogs` folder of the repo and push it to make it live and deploy it wherever you want.
 
-First, run the development server:
+### Why am i building this?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I know, there are hundreds of blogging apps and tools made for people to self host and publish, but I still find everything very complex for a laymen to create & publish.
+I have been writing for years on [substack](https://blogs.souravk.com/), it has been breeze - to type, publish and send newsletters. Nothing comes close to this.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I want to build something like substack, open-source for anyone to clone and self host it, plugin your own services and customise your own themes.
+That's it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+_Will be building in public, you can follow the repo and star it if you think, something like should exists.
+It would encourage me to maintain this long term._
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### To-Do:
 
-## Learn More
+- [ ] Simple host-able content layer pages
+- [ ] A simple theme
+- [ ] An admin auth to publish through the app, instead of adding `.md` files
+- [ ] Plugin LLM to correct your grammar and format the content to publish
+- [ ] Integrating resend to send out newsletter
+- [ ] Supabase back-end to store necessary data and auth
 
-To learn more about Next.js, take a look at the following resources:
+### How to run?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Clone the repo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    git clone https://github.com/sourav-bz/blogform.xyz
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add your blogs in `blogs` folder as `.md` files.
+Run the app by `npm run dev` check out the look and feel of your blog, if everything looks good host it on vercel or any hosting site.
