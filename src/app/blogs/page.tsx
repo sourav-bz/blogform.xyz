@@ -1,41 +1,6 @@
-import { allBlogs, Blogs } from "contentlayer/generated";
+import { allBlogs } from "contentlayer/generated";
 
 export default function Blogs() {
-  // const articles = [
-  //   {
-  //     title: "October was a great month!",
-  //     description:
-  //       "A moment of enlightenment and discovery of the path to glory.",
-  //     author: "SOURAV",
-  //     date: "5 Nov 2024",
-  //     image: "/api/placeholder/400/200",
-  //   },
-  //   {
-  //     title: "Releasing Showfer.ai & What's up?",
-  //     description:
-  //       "A long awaited update from the journey, some really good wins, challenges and learnings.",
-  //     author: "SOURAV",
-  //     date: "5 Nov 2024",
-  //     image: "/api/placeholder/400/200",
-  //   },
-  //   {
-  //     title: "Asking 'why' is an act of compassion",
-  //     description:
-  //       "An interim update blog on how we as founders and creators are adapting for the long haul.",
-  //     author: "SOURAV",
-  //     date: "5 Nov 2024",
-  //     image: "/api/placeholder/400/200",
-  //   },
-  //   {
-  //     title: "Beginning of a new age",
-  //     description:
-  //       "Sharing the progress and learning from building in Robotics space for last 3 months from India",
-  //     author: "SOURAV",
-  //     date: "4 Nov 2024",
-  //     image: "/api/placeholder/400/200",
-  //   },
-  // ];
-
   return (
     <div className="flex-1 p-8">
       <h2 className="text-2xl font-bold mb-8 dark:text-white">BLOGS</h2>
