@@ -1,16 +1,16 @@
 // components/Navigation.tsx
 import {
   allAbouts,
-  allProjects,
-  allNewsletters,
+  allPricings,
+  allThemes,
   allBlogs,
   allHomes,
 } from "contentlayer/generated";
 import Link from "next/link";
 
 console.log("allAbouts", allAbouts);
-console.log("allProjects", allProjects);
-console.log("allNewsletters", allNewsletters);
+console.log("allPricings", allPricings);
+console.log("allThemes", allThemes);
 console.log("allBlogs", allBlogs);
 console.log("allHomes", allHomes);
 
@@ -18,7 +18,7 @@ const Navigation = () => {
   // Get unique navigation items from nav folder
   const navItems = [
     ...new Set(
-      [...allAbouts, ...allProjects, ...allNewsletters, ...allBlogs]
+      [...allAbouts, ...allPricings, ...allThemes, ...allBlogs]
         .filter((item) => item._raw.sourceFileDir.startsWith("nav/"))
         .map((item) => item.type.toLowerCase())
     ),

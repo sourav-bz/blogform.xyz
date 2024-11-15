@@ -10,14 +10,14 @@ export const About = defineDocumentType(() => ({
   filePathPattern: `nav/about/*.md`,
 }));
 
-export const Projects = defineDocumentType(() => ({
-  name: "Projects",
-  filePathPattern: `nav/projects/*.md`,
+export const Pricing = defineDocumentType(() => ({
+  name: "Pricing",
+  filePathPattern: `nav/pricing/*.md`,
 }));
 
-export const Newsletter = defineDocumentType(() => ({
-  name: "Newsletter",
-  filePathPattern: `nav/newsletter/*.md`,
+export const Themes = defineDocumentType(() => ({
+  name: "Themes",
+  filePathPattern: `nav/themes/*.md`,
 }));
 
 export const Blogs = defineDocumentType(() => ({
@@ -47,5 +47,5 @@ export const Blogs = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "blogform",
-  documentTypes: [Home, About, Projects, Newsletter, Blogs],
+  documentTypes: [Home, About, Pricing, Themes, Blogs],
 });
